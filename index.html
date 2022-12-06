@@ -161,79 +161,104 @@
                         <div style="height: 3em;"></div>
                         <h4 class="text-uppercase fw-bold font-monospace mb-3">Projects</h4>
 
-                        <div class="ms-0 ms-sm-0 ms-lg-4">
-                            <div class="d-flex d-sm-flex flex-wrap justify-content-around ">
-                                <div class="card mb-3" style="width: 15rem;">
-                                    <img src="https://picsum.photos/300?grayscale" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-3">Title</h5>
-                                        <p class="card-text">asdadsdawdasdsad asdadw asd adw asd</p>
-                                        <a href="#" class="btn btn-sm btn-dark">Go to repository</a>
+                        <div class="ms-0 ms-sm-0 ms-lg-4 border-start border-end border-dark rounded-4">
+                            <div id="projectsCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="3"></button>
+                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="4"></button>
+                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="5"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/projects/declutter.png" alt="" class="d-block w-100 rounded-4 p-3 opacity-50">
+                                        <div class="d-block d-md-none" style="height: 15em;"></div>
+                                        <div class="carousel-caption mb-4">
+                                            <div class="pb-3">
+                                                <h6 class="fw-bold">Declutter</h6>
+                                                <small>A web project that is blog-ish but not really and works sort of like twitter with the idea of writing your thoughts down to "declutter".</small>
+                                            </div>
+                                            <a href="https://github.com/hyoaru/declutter" target="_blank" class="btn btn-sm btn-outline-dark mb-2">Go to repository</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/projects/sparta-data-science-and-machine-learning-using-python.png" alt="" class="d-block w-100 rounded-4 p-3 opacity-50">
+                                        <div class="d-block d-md-none" style="height: 15em;"></div>
+                                        <div class="carousel-caption mb-4">
+                                            <div class="pb-3">
+                                                <h6 class="fw-bold">SPARTA Capstone: Data Science and Machine Learning using Python</h6>
+                                                <small>A machine learning peer graded capstone of Smarter Philippines through Data Analytics R&D, Training and Adoption (SPARTA).</small>
+                                            </div>
+                                            <a href="https://github.com/hyoaru/sparta-data-science-and-machine-learning-using-python" target="_blank" class="btn btn-sm btn-outline-dark mb-2">Go to repository</a>
+                                            <a href="https://htmlpreview.github.io/?https://github.com/hyoaru/sparta-data-science-and-machine-learning-using-python/blob/master/ml_ds_capstone.html" target="_blank" class="btn btn-sm btn-outline-dark mb-2">View Process</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/projects/sparta-representing-data-and-feature-engineering.png" alt="" class="d-block w-100 rounded-4 p-3 opacity-50">
+                                        <div class="d-block d-md-none" style="height: 15em;"></div>
+                                        <div class="carousel-caption mb-4">
+                                            <div class="pb-3">
+                                                <h6 class="fw-bold">SPARTA: Representing Data and Feature Engineering</h6>
+                                                <small>A machine learning peer graded assignment of project SPARTA. Implementation of feature engineering on adult income data set.</small>
+                                            </div>
+                                            <a href="https://github.com/hyoaru/sparta-representing-data-and-feature-engineering" target="_blank" class="btn btn-sm btn-outline-dark mb-2">Go to repository</a>
+                                            <a href="https://htmlpreview.github.io/?https://github.com/hyoaru/sparta-representing-data-and-feature-engineering/blob/master/representing_data_and_feature_engineering.html" target="_blank" class="btn btn-sm btn-outline-dark mb-2">View Process</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/projects/sparta-supervisedml-binary-classification.png" alt="" class="d-block w-100 rounded-4 p-3 opacity-50">
+                                        <div class="d-block d-md-none" style="height: 15em;"></div>
+                                        <div class="carousel-caption mb-4">
+                                            <div class="pb-3">
+                                                <h6 class="fw-bold">SPARTA: Supervised ML Binary Classification</h6>
+                                                <small>A machine learning peer graded assignment of project SPARTA. Implementation of machine learning classification on breast cancer wisconsin diagnostic data set.</small>
+                                            </div>
+                                            <a href="https://github.com/hyoaru/sparta-supervisedml-binary-classification" target="_blank" class="btn btn-sm btn-outline-dark mb-2">Go to repository</a>
+                                            <a href="https://htmlpreview.github.io/?https://github.com/hyoaru/sparta-supervisedml-binary-classification/blob/master/breast_cancer_binary_classification.html" target="_blank" class="btn btn-sm btn-outline-dark mb-2">View Process</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/projects/sparta-unsupervisedml-clustering.png" alt="" class="d-block w-100 rounded-4 p-3 opacity-50">
+                                        <div class="d-block d-md-none" style="height: 15em;"></div>
+                                        <div class="carousel-caption mb-4">
+                                            <div class="pb-3">
+                                                <h6 class="fw-bold">SPARTA: Unsupervised ML Clustering</h6>
+                                                <small>A machine learning peer graded assignment of project SPARTA. Implementation of machine learning clustering on iris plants data set.</small>
+                                            </div>
+                                            <a href="https://github.com/hyoaru/sparta-unsupervisedml-clustering" target="_blank" class="btn btn-sm btn-outline-dark mb-2">Go to repository</a>
+                                            <a href="https://htmlpreview.github.io/?https://github.com/hyoaru/sparta-unsupervisedml-clustering/blob/master/iris_clustering.html" target="_blank" class="btn btn-sm btn-outline-dark mb-2">View Process</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="images/projects/prime-number-forest.png" alt="" class="d-block w-100 rounded-4 p-3 opacity-50">
+                                        <div class="d-block d-md-none" style="height: 15em;"></div>
+                                        <div class="carousel-caption mb-4">
+                                            <div class="pb-3">
+                                                <h6 class="fw-bold">Data Visualization: Prime Number Forest</h6>
+                                                <small>An interactive data visualization made with python, plotly, pandas, and numpy, of how prime numbers from 1 - 200 would look like if it was a forest.</small>
+                                            </div>
+                                            <a href="https://github.com/hyoaru/sch-acts/tree/master/dismath-3dmesh-artwork" target="_blank" class="btn btn-sm btn-outline-dark mb-2">Go to repository</a>
+                                            <a href="https://htmlpreview.github.io/?https://github.com/hyoaru/sch-acts/blob/master/dismath-3dmesh-artwork/mesh_art_plot.html" target="_blank" class="btn btn-sm btn-outline-dark mb-2">Live preview</a>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="card mb-3" style="width: 15rem;">
-                                    <img src="https://picsum.photos/300?grayscale" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-3">Title</h5>
-                                        <p class="card-text">asdadsdawdasdsad asdadw asd adw asd</p>
-                                        <a href="#" class="btn btn-sm btn-dark">Go to repository</a>
-                                    </div>
-                                </div>
-
-                                <div class="card mb-3" style="width: 15rem;">
-                                    <img src="https://picsum.photos/300?grayscale" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-3">Title</h5>
-                                        <p class="card-text">asdadsdawdasdsad asdadw asd adw asd</p>
-                                        <a href="#" class="btn btn-sm btn-dark">Go to repository</a>
-                                    </div>
-                                </div>
-
-                                <div class="card mb-3" style="width: 15rem;">
-                                    <img src="https://picsum.photos/300?grayscale" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-3">Title</h5>
-                                        <p class="card-text">asdadsdawdasdsad asdadw asd adw asd</p>
-                                        <a href="#" class="btn btn-sm btn-dark">Go to repository</a>
-                                    </div>
-                                </div>
-
-                                <div class="card mb-3" style="width: 15rem;">
-                                    <img src="https://picsum.photos/300?grayscale" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-3">Title</h5>
-                                        <p class="card-text">asdadsdawdasdsad asdadw asd adw asd</p>
-                                        <a href="#" class="btn btn-sm btn-dark">Go to repository</a>
-                                    </div>
-                                </div>
-
-                                <div class="card mb-3" style="width: 15rem;">
-                                    <img src="https://picsum.photos/300?grayscale" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-3">Title</h5>
-                                        <p class="card-text">asdadsdawdasdsad asdadw asd adw asd</p>
-                                        <a href="#" class="btn btn-sm btn-dark">Go to repository</a>
-                                    </div>
-                                </div>
-
-                                <div class="card mb-3" style="width: 15rem;">
-                                    <img src="https://picsum.photos/300?grayscale" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-3">Title</h5>
-                                        <p class="card-text">asdadsdawdasdsad asdadw asd adw asd</p>
-                                        <a href="#" class="btn btn-sm btn-dark">Go to repository</a>
-                                    </div>
-                                </div>
-    
-                                <div class="card mb-3" style="width: 15rem;">
-                                    <img src="https://picsum.photos/300?grayscale" alt="" class="card-img-top">
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-3">Title</h5>
-                                        <p class="card-text">asdadsdawdasdsad asdadw asd adw asd</p>
-                                        <a href="#" class="btn btn-sm btn-dark">Go to repository</a>
-                                    </div>
-                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -275,12 +300,12 @@
                                     <div class="d-flex flex-row flex-wrap">
                                         <div class="ps-3 ms-0 ms-sm-2 ms-md-4 me-3">
                                             <div class="d-flex flex-column">
-                                                <a href="https://github.com/hyoarujjcabreraaaa" class="text-white text-decoration-none d-flex flex-row align-items-center">
+                                                <a target="_blank" href="https://github.com/hyoarujjcabreraaaa" class="text-white text-decoration-none d-flex flex-row align-items-center">
                                                     <i class="bi bi-github fs-3 pe-3"></i>
                                                     <small>hyoaru</small>
                                                 </a>
 
-                                                <a href="https://www.facebook.com/jjcabreraaaa" class="text-white text-decoration-none d-flex flex-row align-items-center">
+                                                <a target="_blank" href="https://www.facebook.com/jjcabreraaaa" class="text-white text-decoration-none d-flex flex-row align-items-center">
                                                     <i class="bi bi-facebook fs-3 pe-3"></i>
                                                     <small>jjcabreraaaa</small>
                                                 </a>
@@ -289,12 +314,12 @@
 
                                         <div class="ps-3 ms-0 ms-sm-2 ms-md-4">
                                             <div class="d-flex flex-column">
-                                                <a href="https://www.linkedin.com/in/jjcabreraaaa/" class="text-white text-decoration-none d-flex flex-row align-items-center">
+                                                <a target="_blank" href="https://www.linkedin.com/in/jjcabreraaaa/" class="text-white text-decoration-none d-flex flex-row align-items-center">
                                                     <i class="bi bi-linkedin fs-3 pe-3"></i>
                                                     <small>jjcabreraaaa</small>
                                                 </a>
 
-                                                <a href="https://open.spotify.com/user/12180365121" class="text-white text-decoration-none d-flex flex-row align-items-center">
+                                                <a target="_blank" href="https://open.spotify.com/user/12180365121" class="text-white text-decoration-none d-flex flex-row align-items-center">
                                                     <i class="bi bi-spotify fs-3 pe-3"></i>
                                                     <small>haeu</small>
                                                 </a>
@@ -303,15 +328,15 @@
 
                                         <div class="ps-3 ms-0 ms-sm-2 ms-md-4">
                                             <div class="d-flex flex-column">
-                                                <div class="text-white text-decoration-none d-flex flex-row align-items-center">
+                                                <a target="_blank" href="#" class="pe-none text-white text-decoration-none d-flex flex-row align-items-center">
                                                     <i class="bi bi-discord fs-3 pe-3"></i>
                                                     <small>hyo#1187</small>
-                                                </div>
+                                                </a>
 
-                                                <div class="text-white text-decoration-none d-flex flex-row align-items-center">
+                                                <a target="_blank" href="#" class="pe-none text-white text-decoration-none d-flex flex-row align-items-center">
                                                     <i class="bi bi-twitter fs-3 pe-3"></i>
                                                     <small>[redacted]</small>
-                                                </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
