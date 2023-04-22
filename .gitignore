@@ -2,3 +2,5 @@
 test.html
 
 # Folders
+.parcel-cache/
+node_modules/
