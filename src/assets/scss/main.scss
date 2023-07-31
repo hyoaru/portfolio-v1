@@ -1,0 +1,19 @@
+@import "./abstract/variables";
+
+// Bootstrap imports
+@import "bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+// Animate CSS imports
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+// FontAwesome CSS imports
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/brands.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/solid.min.css");
+
+html {font-size: 13px;} 
+
+@media only screen and (max-width: 390px) {
+    .fs-auto {font-size: 4.5vw;}
+}
