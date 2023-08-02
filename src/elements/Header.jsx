@@ -9,7 +9,7 @@ function Header() {
         <>
             <header className="bg-white fixed-top d-block d-md-block d-lg-none pt-3">
                 <nav className="navbar">
-                    <div className="container">
+                    <div className="container px-4">
                         <a href="#" className="navbar-brand text-uppercase font-monospace fw-bold mt-1">JCabrera</a>
                         <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                             <span className="navbar-toggler-icon"></span>

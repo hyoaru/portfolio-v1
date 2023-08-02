@@ -1,7 +1,9 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 // App imports
 import { navigationMapList } from './data/Navigation'
+import AnimationPulseOnHover from '../animations/AnimationPulseOnHover'
 
 function Sidebar() {
   return (
@@ -14,11 +16,13 @@ function Sidebar() {
             
             {navigationMapList.map((navigation) => (
                 <li className="nav-item" key={navigation.navigationID}>
-                    <a href={navigation.navigationID} className="nav-link text-dark fw-bold fs-5">{navigation.navigationName}</a>
+                    <motion.a href={navigation.navigationID} className="nav-link text-dark fw-bold fs-5" whileHover={{opacity: "68%"}} transition={{duration: 0.3}}>
+                        {navigation.navigationName}
+                    </motion.a>
                 </li>
             ))}
             
-            <div className="dropdown">
+            <motion.div className="dropdown" whileHover={{opacity: "68%"}} transition={{duration: 0.3}}>
                 <button className="btn nav-link text-dark fw-bold fs-5 dropdown-toggle" type="button" data-bs-toggle="dropdown">
                     Download
                 </button>
@@ -26,7 +30,7 @@ function Sidebar() {
                     <a href="#" className="dropdown-item">Resume</a>
                     <a href="#" className="dropdown-item">Curriculum Vitae</a>
                 </ul>
-            </div>
+            </motion.div>
         </ul>
     </div>
     </>
