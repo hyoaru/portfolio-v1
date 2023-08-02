@@ -45,6 +45,7 @@ function AboutSection() {
                                             key = {`interest_${interest.name}`}
                                             name = {interest.name}
                                             bits = {interest.bits}
+                                            former = {interest.former}
                                         />
                                     ))}
                                 </div>
