@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
     "framer-motion": "^10.15.0",
+    "js-file-download": "^0.4.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
