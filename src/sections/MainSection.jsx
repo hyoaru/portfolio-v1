@@ -56,7 +56,7 @@ function MainSection() {
             </div>
 
             <div className="d-block d-md-none mt-4">
-                <small className="text-secondary mb-1 mt-2">Technologies</small>
+                <small className="text-secondary mb-1 mt-2 mb-2 d-block">Technologies I work and used to work with</small>
                 <div>
                     {technologies.map((technology) => (
                         <TechnologyBadge 
