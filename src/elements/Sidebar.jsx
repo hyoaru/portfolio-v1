@@ -1,24 +1,13 @@
 import React from 'react'
 import { motion } from "framer-motion"
-import Axios from 'axios';
-import fileDownload from 'js-file-download';
 
 // App imports
 import { navigationMapList } from './data/Navigation'
 import AnimationPulseOnHover from '../animations/AnimationPulseOnHover'
-
-function downloadFromURL(url, filename) {
-    Axios.get(url, {
-        responseType: 'blob',
-    }).then(res => {
-        fileDownload(res.data, filename);
-    });
-}
+import { downloadFromURL } from './Utilities'
+import {resumeURL, resumeDownloadFileName} from './data/Data'
 
 function Sidebar() {
-    const resumeURL = `${import.meta.env.VITE_PORTFOLIO_RESOURCES_REPOSITORY_URL}/assets/documents/resume.pdf`
-    const resumeDownloadFileName = "Cabrera_Jenjade_Resume.pdf"
-
     return (
         <>
             <div className="sticky-top" style={{ top: '8rem' }}>

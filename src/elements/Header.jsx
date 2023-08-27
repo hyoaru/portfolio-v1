@@ -2,9 +2,10 @@ import React from 'react'
 
 // App imports
 import { navigationMapList } from './data/Navigation'
+import { resumeURL, resumeDownloadFileName } from './data/Data'
+import { downloadFromURL } from './Utilities'
 
 function Header() {
-
     return (
         <>
             <header className="bg-white fixed-top d-block d-md-block d-lg-none pt-3">
@@ -28,7 +29,7 @@ function Header() {
                                         Download
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <a href="#" className="dropdown-item">Resume</a>
+                                        <a href="#" className="dropdown-item" onClick={() => { downloadFromURL(resumeURL, resumeDownloadFileName) }}>Resume</a>
                                         <a href="#" className="dropdown-item">Curriculum Vitae</a>
                                     </ul>
                                 </div>
