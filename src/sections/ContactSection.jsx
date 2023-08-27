@@ -7,7 +7,7 @@ import AnimationFadeOnShow from '../animations/AnimationFadeOnShow'
 function ContactSection() {
     return (
         <>
-            <AnimationWipeOnShow wipeDirection = "top" borderRadius = {"1.8rem 1.8rem 0rem 0rem"}>
+            <AnimationFadeOnShow wipeDirection = "top" borderRadius = {"1.8rem 1.8rem 0rem 0rem"}>
                 <div className="bg-dark py-5 p-4 p-sm-5 rounded-5 rounded-bottom-0 text-white">
                     <div className="container-fluid">
                         <div className="mb-4">
@@ -66,7 +66,7 @@ function ContactSection() {
                         </AnimationFadeOnShow>
                     </div>
                 </div>
-            </AnimationWipeOnShow>
+            </AnimationFadeOnShow>
         </>
     )
 }

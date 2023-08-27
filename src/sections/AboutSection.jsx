@@ -23,7 +23,7 @@ function AboutSection() {
 
     return (
         <>
-            <AnimationWipeOnShow borderRadius = {"1.8rem"}>
+            <AnimationFadeOnShow borderRadius = {"1.8rem"}>
                 <div className="bg-dark py-5 p-4 p-sm-5 rounded-5 text-white" >
                     <div className="container-fluid">
                         <div className="mb-4">
@@ -69,7 +69,7 @@ function AboutSection() {
                         </div>
                     </div>
                 </div>
-            </AnimationWipeOnShow>
+            </AnimationFadeOnShow>
         </>
     )
 }
