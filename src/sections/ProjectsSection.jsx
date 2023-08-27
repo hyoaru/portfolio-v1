@@ -35,7 +35,7 @@ function ProjectsSection() {
                                     <AnimationFadeOnShow>
                                     <img src={project.image} alt="" className="d-block w-100 rounded-5 p-0 opacity-50"></img>
                                     </AnimationFadeOnShow>
-                                    <div className="d-block d-md-none" style={{ height: '15em' }}></div>
+                                    <div className="d-block d-md-none mt-5 mt-sm-0" style={{ height: '15em' }}></div>
                                     <div className="carousel-caption mb-4">
                                         <AnimationFadeOnShow animationDelay = {0.4}>
                                             <div className="pb-3">
