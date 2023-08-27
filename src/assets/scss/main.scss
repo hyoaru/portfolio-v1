@@ -9,17 +9,6 @@
 @import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/brands.min.css");
 @import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/solid.min.css");
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-    display: none;
-}
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
 html {font-size: 13px;} 
 
 @media only screen and (max-width: 390px) {
