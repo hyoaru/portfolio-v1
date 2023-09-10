@@ -29,8 +29,8 @@ function Sidebar() {
                             Download
                         </button>
                         <ul className="dropdown-menu">
-                            <a className="dropdown-item" onClick={() => { downloadFromURL(resumeURL, resumeDownloadFileName) }}>Resume</a>
-                            <a href="#" className="dropdown-item">Curriculum Vitae</a>
+                            <a className="dropdown-item" style={{cursor: "pointer"}} onClick={() => { downloadFromURL(resumeURL, resumeDownloadFileName) }}>Resume</a>
+                            <a className="dropdown-item" style={{cursor: "pointer"}}>Curriculum Vitae</a>
                         </ul>
                     </div>
                 </ul>
