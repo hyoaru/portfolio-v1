@@ -1,7 +1,7 @@
 import React from 'react'
 
 function TechnologyBadge(props) {
-    const url = `https://img.shields.io/badge/-${props.technologyName}-%23${props.bgColor}?style=flat-square&logo=${props.technologyLogo}&logoColor=${props.logoColor}`
+    const url = `https://img.shields.io/badge/-${props.technologyName}-%23eeeeee?style=flat-square&logo=${props.technologyLogo}&logoColor=black`
 
     return (
         <>

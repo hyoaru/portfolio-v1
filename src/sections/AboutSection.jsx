@@ -13,17 +13,17 @@ function AboutSection() {
 
     useEffect(() => {
         fetch(`${import.meta.env.VITE_PORTFOLIO_RESOURCES_REPOSITORY_URL}/interests.json`)
-        .then((response) => response.json())
-        .then((json) => setInterests(json))
+            .then((response) => response.json())
+            .then((json) => setInterests(json))
 
         fetch(`${import.meta.env.VITE_PORTFOLIO_RESOURCES_REPOSITORY_URL}/socials.json`)
-        .then((response) => response.json())
-        .then((json) => setSocials(json))
+            .then((response) => response.json())
+            .then((json) => setSocials(json))
     }, [])
 
     return (
         <>
-            <AnimationFadeOnShow borderRadius = {"1.8rem"}>
+            <AnimationFadeOnShow borderRadius={"1.8rem"}>
                 <div className="bg-dark py-5 p-4 p-sm-5 rounded-5 text-white" >
                     <div className="container-fluid">
                         <div className="mb-4">
@@ -42,10 +42,10 @@ function AboutSection() {
                                 <div className="ps-3 ms-0 ms-sm-2 row">
                                     {interests.map((interest) => (
                                         <InterestTag
-                                            key = {`interest_${interest.name}`}
-                                            name = {interest.name}
-                                            bits = {interest.bits}
-                                            former = {interest.former}
+                                            key={`interest_${interest.name}`}
+                                            name={interest.name}
+                                            bits={interest.bits}
+                                            former={interest.former}
                                         />
                                     ))}
                                 </div>
@@ -57,11 +57,8 @@ function AboutSection() {
                                 <div className="ms-3 d-flex flex-wrap">
                                     {socials.map((social) => (
                                         <SocialLinks
-                                            key = {`social_${social.name}`}
-                                            link = {social.link}
-                                            label = {social.label}
-                                            anchorClass = {social.anchorClass}
-                                            iconClass = {social.iconClass}
+                                            key={`social_${social.name}`}
+                                            {...social}
                                         />
                                     ))}
                                 </div>

@@ -22,7 +22,7 @@ function ProjectsSection() {
             </h4>
 
             <AnimationFadeOnShow>
-                <div className="ms-0 ms-sm-0 ms-lg-4 border-start border-end border-dark rounded-5">
+                <div className="ms-0 ms-sm-0 ms-lg-4 border-start border-end border-dark rounded-5 overflow-hidden">
                     <div id="projectsCarousel" className="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div className="carousel-indicators">
                             {projects.map((_, index) => (
@@ -33,7 +33,7 @@ function ProjectsSection() {
                             {projects.map((project, index) => (
                                 <div className={"carousel-item ".concat(index === 0 ? "active" : "")} key={project.title}>
                                     <AnimationFadeOnShow>
-                                    <img src={project.image} alt="" className="d-block w-100 rounded-5 p-0 opacity-50"></img>
+                                    <img src={project.image} alt="" className="d-block object-fit-cover w-100 rounded-5 p-0 opacity-50"></img>
                                     </AnimationFadeOnShow>
                                     <div className="d-block d-md-none mt-5 mt-sm-0" style={{ height: '15em' }}></div>
                                     <div className="carousel-caption mb-4">

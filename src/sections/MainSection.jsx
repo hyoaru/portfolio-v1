@@ -11,70 +11,68 @@ function MainSection() {
 
     useEffect(() => {
         fetch(`${import.meta.env.VITE_PORTFOLIO_RESOURCES_REPOSITORY_URL}/technologies.json`)
-        .then((response) => response.json())
-        .then((json) => {setTechnologies(json)})
+            .then((response) => response.json())
+            .then((json) => { setTechnologies(json) })
     }, [])
+
+    console.log(technologies)
 
     return (
         <>
-        <div className="row">
-            <div className="d-flex">
-                <div className="">
-                    <img className='rounded-5 shadow-lg' src={`${import.meta.env.VITE_PORTFOLIO_RESOURCES_REPOSITORY_URL}/assets/images/main_image_shrinked.jpg`} alt="" />
-                </div>
+            <div className="row">
+                <div className="d-flex">
+                    <div className="">
+                        <img className='rounded-5 shadow-lg' src={`${import.meta.env.VITE_PORTFOLIO_RESOURCES_REPOSITORY_URL}/assets/images/main_image_shrinked.jpg`} alt="" />
+                    </div>
 
-                <div className="ps-4 ps-sm-5 mt-3">
-                    <small className="text-secondary mb-2">An idiot sandwich from the philippines</small>
-                    <h3 className="mt-2 text-uppercase fw-bold font-monospace fs-auto">
-                        I am {""}
-                        <AnimationWipeOnShow>
-                            <span className="bg-dark text-white">Jen Jade Cabrera</span>
-                        </AnimationWipeOnShow>
-                        , a programmer, graphic designer, layout artist, and a data scientist in the making.
-                    </h3>
-                    
-                    <div className="d-none d-md-block">
-                        <small className="text-secondary mt-3 mb-2 d-block">Technologies I work and used to work with</small>
-                        <div>
-                            {technologies.map((technology) => (
-                                <TechnologyBadge 
-                                    key = {technology.technologyName}
-                                    technologyName = {technology.technologyName}
-                                    bgColor = {technology.bgColor}
-                                    technologyLogo = {technology.technologyLogo}
-                                    logoColor = {technology.logoColor}
-                                />
-                            ))}
-                        </div>
-                        <div className="mt-3">
-                            <a href={visitorBadgeURLHref} target='_blank'>
-                                <img src={visitorBadgeURL}></img>
-                            </a>
+                    <div className="ps-4 ps-sm-5 mt-3">
+                        <small className="text-secondary mb-2">An idiot sandwich from the philippines</small>
+                        <h3 className="mt-2 text-uppercase fw-bold font-monospace fs-auto">
+                            I am {""}
+                            <AnimationWipeOnShow>
+                                <span className="bg-dark text-white">Jen Jade Cabrera</span>
+                            </AnimationWipeOnShow>
+                            , a programmer, graphic designer, layout artist, and a data scientist in the making.
+                        </h3>
+
+                        <div className="d-none d-md-block">
+                            <small className="text-secondary mt-3 mb-2 d-block">Technologies I work and used to work with</small>
+                            <div>
+                                {technologies.map((technology) => (
+                                    <TechnologyBadge
+                                        key={technology.name}
+                                        technologyName={technology.name}
+                                        technologyLogo={technology.logo}
+                                    />
+                                ))}
+                            </div>
+                            <div className="mt-3">
+                                <a href={visitorBadgeURLHref} target='_blank'>
+                                    <img src={visitorBadgeURL}></img>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="d-block d-md-none mt-4">
-                <small className="text-secondary mb-1 mt-2 mb-2 d-block">Technologies I work and used to work with</small>
-                <div>
-                    {technologies.map((technology) => (
-                        <TechnologyBadge 
-                            key = {technology.technologyName}
-                            technologyName = {technology.technologyName}
-                            bgColor = {technology.bgColor}
-                            technologyLogo = {technology.technologyLogo}
-                            logoColor = {technology.logoColor}
-                        />
-                    ))}
-                </div>
-                <div className="mt-3">
-                    <a href={visitorBadgeURLHref} target='_blank'>
-                        <img src={visitorBadgeURL}></img>
-                    </a>
+                <div className="d-block d-md-none mt-4">
+                    <small className="text-secondary mb-1 mt-2 mb-2 d-block">Technologies I work and used to work with</small>
+                    <div>
+                        {technologies.map((technology) => (
+                            <TechnologyBadge
+                                key={technology.name}
+                                technologyName={technology.name}
+                                technologyLogo={technology.logo}
+                            />
+                        ))}
+                    </div>
+                    <div className="mt-3">
+                        <a href={visitorBadgeURLHref} target='_blank'>
+                            <img src={visitorBadgeURL}></img>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
         </>
     )
 }
